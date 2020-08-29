@@ -68,3 +68,15 @@ end note
 
 selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/favicon.ico
 palvelin-->selain: favicon.ico
+
+
+0.6
+
+note over selain:
+Selain luo muistiinpanon, lisää sen muistiinpanojen listalle komennolla notes.push(note), piirtää ruudun sisällön eli muistiinpanojen listan uudelleen ja lähettää uuden muistiinpanon palvelimelle POST-pyynnöllä.
+end note
+selain->palvelin: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+
+note over selain:
+selain ei lataa sivua uudestaan: oletustoiminto on estetty
+end note
